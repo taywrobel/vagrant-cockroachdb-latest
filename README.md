@@ -1,12 +1,18 @@
-# CockroachDB-Latest Vagrant box
+# CockroachDB-Latest Vagrantfile
 
-This is a simple base Vagrantfile to download and run the latest version of CockroachDB into a 64 bit ubuntu/trusty environment.
+This is a simple Vagrantfile to download and run the latest version of [CockroachDB](https://github.com/cockroachdb/cockroach) into a 64 bit ubuntu/trusty environment using VirtualBox.
 
-#### Dependencies
+#### Running
 
-This box makes use of the [vagrant-reload plugin](https://github.com/aidanns/vagrant-reload).  Before starting the box, make sure you have the plugin installed by running:
+This Vagrantfile makes use of the [vagrant-reload plugin](https://github.com/aidanns/vagrant-reload).  Before starting the box, make sure you have the plugin installed by running:
 
     $ vagrant plugin install vagrant-reload
+
+The base box used in this Vagrantfile is VirtualBox based, so make sure you have [VirtualBox](https://www.virtualbox.org) installed as well.
+
+Once these two prerequisites are met, you should be able to run the box by navigating to the directory containing the Vagrantfile and running:
+
+    $ vagrant up
 
 #### Configuration
 
